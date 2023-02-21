@@ -2,7 +2,6 @@
 
 * {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #1b1625;
   box-sizing: border-box;
   font-size:20px;
 }
@@ -27,6 +26,7 @@ body {
   
   footer {
     flex: 0 30px;
+    color:azure;
   }
   
   menu {
@@ -48,6 +48,7 @@ body {
   
   footer a {
     float: right;
+    color: white;
   }
   p {
     font-weight:300;
@@ -64,7 +65,7 @@ body {
     font-weight: bold;
   }
   a:active {
-    background-color: #533294;
+    font-weight: bolder;
     color:#533294;
   }  
   

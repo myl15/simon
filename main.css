@@ -27,6 +27,7 @@ body {
   footer {
     flex: 0 30px;
     color:azure;
+    justify-content: space-around;
   }
   
   menu {
@@ -45,9 +46,11 @@ body {
   menu .nav-item {
     padding: 0 0.3em;
   }
-  
-  footer a {
+ .oneglobe {
     float: right;
+ }
+  footer a {
+    float:right;
     color: white;
   }
   p {

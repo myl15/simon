@@ -49,7 +49,7 @@ class Game {
 
         document.querySelectorAll('.game-button').forEach((el, i) => {
             if (i < btnDescriptions.length) {
-                this.buttons.set(el.id, new Button(btnDescritptions[i], el));
+                this.buttons.set(el.id, new Button(btnDescriptions[i], el));
             }
         });
         

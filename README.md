@@ -43,3 +43,6 @@ This episode of Simon taught about creating a database using Mongo database whic
 | Neo4J         | Graph based data      |
 | InfluxDB      | Time series data      |
 
+Using a cursor paradigm to access the scores data allows the program to return an array of scores to be stored in the scores.html list.  This is a useful object that MongoDB supplies that makes it easier to handle large amounts of data all at once.  The cursor also contains a forEach() method that iterates through each data object, preventing performance issues that can arise when using the toArray() method.  
+
+**SENSITIVE INFORMATION SHOULD NEVER BE STORED DIRECTLY IN THE PROGRAM FILES!!!** When storing keys and usernames and passwords, ensure the security of your database by storing the information to the development environment and accesssing the environment variables inside of your program. 

@@ -62,3 +62,32 @@ Refer to the Simon-login files in the future for how to set up those programs.
 Use uuid to generate tokens for unique identifiers.
 Always securely store passwords.  Crytpographically hash the password and never store the actual password.  Use bcrypt package.
 Use cookieParser to handle cookies and ensure that cookies are only passed from the original site.  cookieParser has built in functions httpOnly, secure, and sameSite which we used for this project.  
+
+### Simon React Deployment
+This deployment recreated the Simon app using react components instead of HTML and Javascript.  
+Here I copied the steps to convert a normal webpage to a React based service. 
+1. ⭐ **Reorganize Simon**
+1. **Commit**: Commit this version in Git as the starting place for the conversion to React. It won't run, but by committing at this point can revert if necessary, instead of starting over. Make sure you keep testing and committing throughout this process.
+1. **Create template React application**. Run `npx create-react-app template-react`. This creates a new directory named `template-react` that contains the basic configuration and template React application code.
+1. **Clean up template code**
+   1. Uninstall and NPM packages you won't use (e.g. stats, test)
+   1. Delete the unnecessary create-react-app files (e.g. images)
+   1. Rename `js` JSX files have `jsx` extension
+   1. Replace the `favicon.ico` with the Simon icon
+   1. Update `manifest.json` to represent Simon
+   1. Clean up the `index.html` file to have the proper fields for Simon
+1. ⭐ **Move template files to Simon**
+1. ⭐ **Convert to React Bootstrap**
+1. ⭐ **Populate App.jsx**
+1. ⭐ **Create view components**
+1. ⭐ **Create the router**
+1. ⭐ **Convert to React components**
+1. ⭐ **Set up to debug**
+1. Refactor play.jsx into simonGame.jsx, simonButton.jsx, and players.jsx
+1. Refactor components to take advantage of React specific functionality and to create sub-components
+1. Move webSocket code from play.jsx to gameNotifier.js
+
+#### Things to remember about React
+React components are rendered by calling the a function that renders them in the HTML page.  
+React components have internal states that can be called through onclick methods.  
+Deployment is more complicated.
